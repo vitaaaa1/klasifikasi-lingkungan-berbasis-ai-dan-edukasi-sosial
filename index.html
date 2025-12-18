@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Klasifikasi Lingkungan Berbasis AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HALAMAN LOGIN -->
+<div class="container" id="loginPage">
+    <h1 class="title">
+        KLASIFIKASI LINGKUNGAN<br>
+        BERBASIS AI DAN EDUKASI SOSIAL
+    </h1>
+
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- HALAMAN UTAMA -->
+<div class="container hidden" id="homePage">
+    <h1 class="title">Produk Alat Kebersihan Lingkungan</h1>
+
+    <p class="description">
+        Website ini bertujuan untuk mendukung <b>edukasi sosial lingkungan</b> 
+        dengan memanfaatkan teknologi <b>Artificial Intelligence (AI)</b>. 
+        Melalui pengunggahan gambar produk alat kebersihan, masyarakat 
+        diharapkan lebih sadar akan pentingnya menjaga kebersihan lingkungan, 
+        mengurangi sampah, dan menciptakan lingkungan yang sehat dan berkelanjutan.
+    </p>
+
+    <input type="file" accept="image/*" onchange="previewImage(event)">
+
+    <div class="preview">
+        <img id="imagePreview">
+    </div>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<!-- HALAMAN LOGOUT -->
+<div class="container hidden" id="logoutPage">
+    <h1 class="title">Anda Telah Logout</h1>
+    <p class="description">
+        Terima kasih telah berpartisipasi dalam edukasi sosial dan menjaga 
+        kebersihan lingkungan 🌱
+    </p>
+    <button onclick="backToLogin()">Login Kembali</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
